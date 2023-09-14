@@ -45,15 +45,20 @@ String getUserCourse(){
 
 
 void main(){
-    getUserName();
-    getUserAge();
-    getUserAddress();
-    getUserGender();
-    getUserCourse();
-    List<String>bioData = [];
-    String name = getUserName();
-    bioData.add(name);
-    print(bioData);
+  List<Map<String,String>> Students=[];
+  while(true){
+    Map<String,String> Student={};
+     Student ["name"] = getUserName();
+   Student ["age"] = getUserAge();
+   Student ["gender"] = getUserGender();
+   Student ["address"] = getUserAddress();
+    Student ["course"] = getUserCourse();
 
+    Students.add(Student);
+    print("");
+   print(Students);
+   print("\nThis is:${Students.length}");
+  
 
+  }
 }

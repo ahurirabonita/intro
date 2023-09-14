@@ -45,15 +45,24 @@ String getUserCourse(){
 
 
 void main(){
-    getUserName();
-    getUserAge();
-    getUserAddress();
-    getUserGender();
-    getUserCourse();
-    List<String>bioData = [];
+   List<String>bioData = [];
     String name = getUserName();
     bioData.add(name);
+
+     String age = getUserAge();
+    bioData.add(age);
+
+     String gender = getUserGender();
+    bioData.add(gender);
+
+     String address = getUserAddress();
+    bioData.add(address);
+
+     String course = getUserCourse();
+    bioData.add(course);
     print(bioData);
+
+
 
 
 }
