@@ -52,6 +52,7 @@ void main(){
      String age = getUserAge();
     bioData.add(age);
 
+
      String gender = getUserGender();
     bioData.add(gender);
 
