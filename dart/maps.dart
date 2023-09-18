@@ -41,6 +41,7 @@ String getUserCourse(){
     String course = getUserInput();
     print("Course is:$course");
     return course;
+    
 }
 
 
